@@ -118,13 +118,6 @@ MERGE (n:Technology {id: "azurelogicapps"}) ON CREATE SET n.name = "Azure Logic 
 MERGE (n:Technology {id: "azuremonitor"}) ON CREATE SET n.name = "Azure Monitor"
 MERGE (n:Client {id: "gammatech"}) ON CREATE SET n.name = "GammaTech", n.industry = "transportation and logistics"
 MERGE (n:Project {id: "betahealthsecurehealthcaredataanalyticsplatformonazure"}) ON CREATE SET n.name = "BetaHealth Secure Healthcare Data Analytics Platform on Azure", n.summary = "BetaHealth, a leading healthcare provider, is dedicated to advancing patient care through data analytics and AI. They require an advanced platform hosted on Microsoft Azure to provide secure, data-driven patient insights, optimize resource allocation, and improve healthcare outcomes while ensuring data privacy and compliance."
-MERGE (n:Technology {id: "azure"}) ON CREATE SET n.name = "Azure"
-MERGE (n:Technology {id: "azuredatabricks"}) ON CREATE SET n.name = "Azure Databricks"
-MERGE (n:Technology {id: "azuremachinelearning"}) ON CREATE SET n.name = "Azure Machine Learning"
-MERGE (n:Technology {id: "azurekeyvault"}) ON CREATE SET n.name = "Azure Key Vault"
-MERGE (n:Technology {id: "azureactivedirectory"}) ON CREATE SET n.name = "Azure Active Directory"
-MERGE (n:Technology {id: "azuresynapseanalytics"}) ON CREATE SET n.name = "Azure Synapse Analytics"
-MERGE (n:Technology {id: "azurelogicapps"}) ON CREATE SET n.name = "Azure Logic Apps"
 MERGE (n:Client {id: "betahealth"}) ON CREATE SET n.name = "BetaHealth", n.industry = "healthcare"
 MERGE (n:Project {id: "alphacorpawspoweredcustomersupportchatbot"}) ON CREATE SET n.name = "AlphaCorp AWS-Powered Customer Support Chatbot", n.summary = "AlphaCorp is experiencing a surge in customer support demands due to their expanding customer base. They require an efficient solution to handle customer inquiries and provide instant support, ensuring a seamless customer experience."
 MERGE (n:Technology {id: "aws"}) ON CREATE SET n.name = "AWS"
@@ -374,13 +367,6 @@ MERGE (a:Project {id: "gammatechautonomousfleetmanagementsystemonazure"}) MERGE 
 MERGE (a:Project {id: "gammatechautonomousfleetmanagementsystemonazure"}) MERGE (b:Technology {id: "azurelogicapps"}) MERGE (a)-[:USES_TECH]->(b)
 MERGE (a:Project {id: "gammatechautonomousfleetmanagementsystemonazure"}) MERGE (b:Technology {id: "azuremonitor"}) MERGE (a)-[:USES_TECH]->(b)
 MERGE (a:Project {id: "gammatechautonomousfleetmanagementsystemonazure"}) MERGE (b:Client {id: "gammatech"}) MERGE (a)-[:HAS_CLIENT]->(b)
-MERGE (a:Project {id: "betahealthsecurehealthcaredataanalyticsplatformonazure"}) MERGE (b:Technology {id: "azure"}) MERGE (a)-[:USES_TECH]->(b)
-MERGE (a:Project {id: "betahealthsecurehealthcaredataanalyticsplatformonazure"}) MERGE (b:Technology {id: "azuredatabricks"}) MERGE (a)-[:USES_TECH]->(b)
-MERGE (a:Project {id: "betahealthsecurehealthcaredataanalyticsplatformonazure"}) MERGE (b:Technology {id: "azuremachinelearning"}) MERGE (a)-[:USES_TECH]->(b)
-MERGE (a:Project {id: "betahealthsecurehealthcaredataanalyticsplatformonazure"}) MERGE (b:Technology {id: "azurekeyvault"}) MERGE (a)-[:USES_TECH]->(b)
-MERGE (a:Project {id: "betahealthsecurehealthcaredataanalyticsplatformonazure"}) MERGE (b:Technology {id: "azureactivedirectory"}) MERGE (a)-[:USES_TECH]->(b)
-MERGE (a:Project {id: "betahealthsecurehealthcaredataanalyticsplatformonazure"}) MERGE (b:Technology {id: "azuresynapseanalytics"}) MERGE (a)-[:USES_TECH]->(b)
-MERGE (a:Project {id: "betahealthsecurehealthcaredataanalyticsplatformonazure"}) MERGE (b:Technology {id: "azurelogicapps"}) MERGE (a)-[:USES_TECH]->(b)
 MERGE (a:Project {id: "betahealthsecurehealthcaredataanalyticsplatformonazure"}) MERGE (b:Client {id: "betahealth"}) MERGE (a)-[:HAS_CLIENT]->(b)
 MERGE (a:Project {id: "alphacorpawspoweredcustomersupportchatbot"}) MERGE (b:Technology {id: "aws"}) MERGE (a)-[:USES_TECH]->(b)
 MERGE (a:Project {id: "alphacorpawspoweredcustomersupportchatbot"}) MERGE (b:Technology {id: "lambda"}) MERGE (a)-[:USES_TECH]->(b)
